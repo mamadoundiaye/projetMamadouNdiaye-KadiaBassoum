@@ -1,28 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# ***PROJET PYTHON***
-# 
-
-# **Partie 3**
-
-# In[5]:
-
-
 import requests
 def get_page(link):
     code_page = requests.get(link)
     return code_page.text
 
 
-# In[14]:
 
-
-get_page('https://fr.wikipedia.org/wiki/Python_(langage)')
-
-
-# In[13]:
-
+#get_page('https://fr.wikipedia.org/wiki/Python_(langage)')
 
 import requests
 import re
@@ -32,14 +15,7 @@ def get_emails(link):
     return result
 
 
-# In[11]:
-
-
-get_emails('https://fr.wikipedia.org/wiki/Python_(langage)')
-
-
-# In[18]:
-
+#get_emails('https://fr.wikipedia.org/wiki/Python_(langage)')
 
 import requests
 import re
@@ -49,13 +25,8 @@ def get_urls(link):
         return result
 
 
-# In[19]:
+#get_urls('https://fr.wikipedia.org/wiki/Python_(langage)')
 
-
-get_urls('https://fr.wikipedia.org/wiki/Python_(langage)')
-
-
-# In[20]:
 
 
 import requests
@@ -69,13 +40,8 @@ def get_tables(link):
         return liste
 
 
-# In[22]:
+#get_tables('https://fr.wikipedia.org/wiki/Table_(base_de_donn%C3%A9es)')
 
-
-get_tables('https://fr.wikipedia.org/wiki/Table_(base_de_donn%C3%A9es)')
-
-
-# In[ ]:
 
 
 
